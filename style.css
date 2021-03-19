@@ -12,3 +12,7 @@ header input {
 }
 
 
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
