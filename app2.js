@@ -25,13 +25,12 @@ async function onFormSubmit() {
 
     
     const container = document.getElementById('container');
-    let template = document.querySelector("#productrow");
+    let template = document.querySelector("#anime-template");
 
     for (const result of data.results) {
-        var tbody = document.querySelector("tbody");
-        var clone = document.importNode(template.content, true);
-        var td = clone.querySelectorAll("td");
-        td[0].textContent = data.results;
+        let clone = document.importNode(template.content, true);
+        let div = clone.querySelectorAll("div");
+        div[0].textContent = result.title;
 
         container.appendChild(clone);
     }
