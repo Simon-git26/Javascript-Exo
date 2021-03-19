@@ -15,4 +15,29 @@ header input {
 #container {
     display: flex;
     flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    
+}
+
+
+.anime-template-container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 24%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.image {
+    display: flex;
+    margin: auto;
 }

@@ -30,7 +30,11 @@ async function onFormSubmit() {
     for (const result of data.results) {
         let clone = document.importNode(template.content, true);
         let div = clone.querySelectorAll("div");
-        div[0].textContent = result.title;
+        div[1].textContent = result.title;
+        let img = clone.querySelectorAll("img");
+        img[0].src = result.image_url;
+
+        div[3].textContent = result.episodes;
 
         container.appendChild(clone);
     }
